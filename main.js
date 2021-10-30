@@ -3,7 +3,7 @@ quick_draw_data_set=["aircraft carrier","airplane","alarm clock","ambulance","an
 random_number = Math.floor((Math.random() * quick_draw_data_set.length) + 1);
 console.log(quick_draw_data_set [random_number]);
 sketch = quick_draw_data_set [random_number];
-document.getElementById('sketch_name').innerHTML = 'Sketch To be Drawn : ' + sketch;
+document.getElementById('show_sketch').innerHTML = 'Sketch To be Drawn : ' + sketch;
 
 timer_counter = 0; 
 timer_check = ""; 
@@ -17,7 +17,7 @@ function updateCanvas()
     random_number = Math.floor((Math.random() * quick_draw_data_set.length) + 1); 
 console.log(quick_draw_data_set[random_number]); 
 sketch = quick_draw_data_set[random_number]; 
-document.getElementById('sketch_name').innerHTML = 'Sketch To be Drawn: ' + sketch;
+document.getElementById('show_sketch').innerHTML = 'Sketch To be Drawn: ' + sketch;
 }
 
 function preload()
